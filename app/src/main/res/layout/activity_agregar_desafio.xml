@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alfonsohh.proyectofinalkotlindi.AgregarRetoActivity"
+    android:padding="20dp"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/ivDesafioTipo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/icono_interrogacion"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_weight="0.2"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Retador"/>
+
+            <TextView
+                android:id="@+id/textViewAgregarDesafioRetadorNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alfon"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:src="@drawable/icono_vs"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Retado"/>
+
+            <EditText
+                android:id="@+id/editTextAgregarDesafioNombreRetado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reto"/>
+
+    <EditText
+        android:id="@+id/editTextDesafioNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Objetivo" />
+
+    <EditText
+        android:id="@+id/editTextDesafioObjetivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tipo" />
+
+    <Spinner
+        android:id="@+id/spinnerDesafio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/textViewAgregarDesafioTipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Número de Libros" />
+
+    <EditText
+        android:id="@+id/editTextDesafioRepeticiones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_weight="0.2"
+        android:layout_height="0dp" />    
+
+    <ImageButton
+        android:id="@+id/imageButtonAgregarDesafio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_add"
+        android:onClick="agregar"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_weight="0.2"
+        android:layout_height="0dp" />
+
+
+</LinearLayout>

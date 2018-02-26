@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alfonsohh.proyectofinalkotlindi.AgregarRetoActivity"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/ivDesafioTipoAbajo"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:src="@drawable/icono_abajo_interrogacion"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:gravity="center_horizontal">
+
+
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/icono_interrogacion"
+                android:id="@+id/ivFotoRetador"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp" />
+
+            <TextView
+                android:id="@+id/textViewDesafioDetalleNombreRetador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alfon"
+                android:textAlignment="center" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp" />
+
+            <ProgressBar
+                android:id="@+id/progressBarDesafioDetalleRetador"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp" />
+
+            <ImageButton
+                android:id="@+id/imageButtonDesafioDetalleRetador"
+                android:onClick="aumentarProgresoRetador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/stat_sys_upload" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp" />
+
+            <TextView
+                android:id="@+id/textViewDesafioDetalleProgresoRetador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0 de 10 Libros"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="225dp"
+            android:src="@drawable/icono_vs"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/icono_interrogacion"
+                android:id="@+id/ivFotoRetado"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp" />
+
+            <TextView
+                android:id="@+id/textViewDesafioDetalleNombreRetado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mary"
+                android:textAlignment="center" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp" />
+
+            <ProgressBar
+                android:id="@+id/progressBarDesafioDetalleRetado"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp" />
+
+            <ImageButton
+                android:id="@+id/imageButtonDesafioDetalleRetado"
+                android:onClick="aumentarProgresoRetado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/stat_sys_upload" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp" />
+
+            <TextView
+                android:id="@+id/textViewDesafioDetalleProgresoRetado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3 de 10 Libros"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".4"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reto"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textViewDesafioDetalleNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dieta del Cucurucho"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp" />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Objetivo"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textViewDesafioDetalleObjetivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comer poco y follar mucho"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:id="@+id/ivDesafioTipoArriba"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:src="@drawable/icono_arriba_interrogacion"/>
+
+
+</LinearLayout>
